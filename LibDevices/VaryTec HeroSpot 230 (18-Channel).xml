@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<device image="user_hero230.jpg" type="DMXDevice" dmxcversion="3.1.0" ddfversion="1.0.0">
+<device image="user_hero230.png" type="DMXDevice" dmxcversion="3.1.0" ddfversion="1.0.0">
   <information>
     <ddf-library-id>1045</ddf-library-id>
     <model>Varytec HeroSpot 230</model>
@@ -16,47 +16,25 @@
         <range range="220"/>
       </tilt>
     </position>
-    <colorwheel dmxchannel="6" finedmxchannel="7">
-      <step type="color" val="#ffffff" mindmx="128" maxdmx="129" caption="White"/>
-      <step type="color" val="#BC272F" mindmx="130" maxdmx="139" caption="Deep Red"/>
-      <step type="color" val="#0156A8" mindmx="140" maxdmx="149" caption="Deep Blue"/>
-      <step type="color" val="#F58220" mindmx="150" maxdmx="159" caption="Orange"/>
-      <step type="color" val="#00A54F" mindmx="160" maxdmx="169" caption="Green"/>
-      <step type="color" val="#BE3D82" mindmx="170" maxdmx="179" caption="Magenta"/>
-      <step type="color" val="#323270" mindmx="180" maxdmx="189" caption="Congo Blue"/>
+    <colorwheel dmxchannel="7">
+      <step type="color" val="" mindmx="0" maxdmx="4" caption="White"/>
+      <step type="color" val="" mindmx="14" maxdmx="22" caption="Red"/>
+      <step type="color" val="3000K" mindmx="32" maxdmx="40" caption="3000 K"/>
+      <step type="color" val="" mindmx="50" maxdmx="58" caption="Green"/>
+      <step type="color" val="" mindmx="68" maxdmx="76" caption="Dark Blue"/>
+	  <step type="color" val="" mindmx="86" maxdmx="94" caption="Yellow"/>
+	  <step type="color" val="" mindmx="104" maxdmx="112" caption="Light Blue"/>
+	  <step type="color" val="" mindmx="122" maxdmx="130" caption="Magenta"/>
       <wheelrotation>
-        <step type="stop" mindmx="216" maxdmx="217"/>
-        <range type="cw" mindmx="215" maxdmx="190" minval="0.00333" maxval="2.666666"/>
-        <range type="ccw" mindmx="218" maxdmx="243" minval="0.00333" maxval="2.666666"/>
+        <step type="stop" mindmx="196" maxdmx="199"/>
+        <range type="cw" mindmx="195" maxdmx="140" minval="0.00333" maxval="2.666666"/>
+        <range type="ccw" mindmx="200" maxdmx="255" minval="0.00333" maxval="2.666666"/>
       </wheelrotation>
     </colorwheel>
-    <colorwheel dmxchannel="8" finedmxchannel="9">
-      <step type="color" val="#ffffff" mindmx="128" maxdmx="129" caption="White"/>
-      <step type="color" val="#F8ABAD" mindmx="130" maxdmx="139" caption="Pink"/>
-      <step type="color" val="#C6C4E1" mindmx="140" maxdmx="149" caption="Lavender"/>
-      <step type="color" val="#D4DE23" mindmx="150" maxdmx="159" caption="Laser Green"/>
-      <step type="color" val="#A1B9D0" mindmx="160" maxdmx="169" caption="CTB 8000K"/>
-      <step type="color" val="#FCD8C8" mindmx="170" maxdmx="179" caption="Minus Green"/>
-      <step type="color" val="#FDEEE6" mindmx="180" maxdmx="189" caption="Half Minus Green"/>
-      <wheelrotation>
-        <step type="stop" mindmx="216" maxdmx="217"/>
-        <range type="cw" mindmx="215" maxdmx="190" minval="0.00333" maxval="2.666666"/>
-        <range type="ccw" mindmx="218" maxdmx="243" minval="0.00333" maxval="2.666666"/>
-      </wheelrotation>
-    </colorwheel>
-    <colortemp dmxchannel="13">
-      <range mindmx="255" maxdmx="0" minval="2700" maxval="6700"/>
-    </colortemp>
     <const dmxchannel="14" name="Macro Colors" val="0"/>
     <const dmxchannel="15" name="Effect Speed" val="0"/>
     <const dmxchannel="16" name="Color Speed" val="0"/>
     <const dmxchannel="17" name="Optic Speed" val="0"/>
-    <raw dmxchannel="18" name="Animation Wheel">
-      <range type="linear" mindmx="19" maxdmx="127"/>
-    </raw>
-    <raw dmxchannel="19" name="Animation Wheel 1 Rotation"/>
-    <raw dmxchannel="20" name="Animation Wheel 2 Rotation"/>
-    <const dmxchannel="21" name="Animation Wheel Macros" val="0"/>
     <gobowheel dmxchannel="22">
       <goborotation dmxchannel="23" finedmxchannel="24">
         <step type="stop" mindmx="0" maxdmx="0"/>
