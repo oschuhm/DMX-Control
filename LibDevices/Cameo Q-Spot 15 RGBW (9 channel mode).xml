@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="user_camQSpot.png" type="DMXDevice" dmxcversion="3.2.0" ddfversion="1.2.0" whitechanneldefaultmode="onlywhite">
+  <information>
+    <ddf-library-id>1502</ddf-library-id>
+    <model>Cameo Q-Spot 15 RGBW</model>
+    <vendor>Cameo</vendor>
+    <author>Oliver Schuhmacher</author>
+    <mode>9 channel mode</mode>
+    <comment></comment>
+  </information>
+  <functions>
+	<!-- dimmer + dimmer fine-->
+	<dimmer dmxchannel="0" finedmxchannel="1" />
+	<!-- strobe functions -->
+	<strobe dmxchannel="2">
+      <step type="open" mindmx="0" maxdmx="5" />
+	  <step type="closed" mindmx="6" maxdmx="10" />
+	  <range type="pulse" mindmx="11" maxdmx="33" minval="1" maxval="20" />
+	  <range type="ramp up" mindmx="34" maxdmx="56" minval="1" maxval="20" />
+	  <range type="ramp down" mindmx="57" maxdmx="79" minval="1" maxval="20" />
+	  <range type="random" mindmx="80" maxdmx="102" minval="1" maxval="20" />
+	  <range type="spikes" mindmx="103" maxdmx="127" minval="1" maxval="20" />
+      <range type="linear" mindmx="128" maxdmx="250" minval="1" maxval="20" />
+    </strobe>
+	<!-- RGBW color -->
+	<rgb>
+	  <red dmxchannel="3" />
+	  <green dmxchannel="4" />
+	  <blue dmxchannel="5" />
+	  <white dmxchannel="6" />
+	</rgb>
+	<!-- color macro -->
+	<const dmxchannel="7" name="Color Macro" val="0" />
+	<!-- color temp -->
+	<const dmxchannel="8" name="Color Temp" val="0" />
+  </functions>
+</device>
