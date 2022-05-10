@@ -6,6 +6,10 @@
     <vendor>Varytec</vendor>
     <author>Oliver Schuhmacher</author>
     <mode>18 Channel</mode>
+	<electrical>
+      <static>20</static>
+      <dimmer>230</dimmer>
+    </electrical>
   </information>
   <functions>
     <!-- pan/tilt ch: 1-4 -->
