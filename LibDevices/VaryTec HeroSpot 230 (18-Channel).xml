@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<device image="user_hero230.png" type="DMXDevice" dmxcversion="3.1.0" ddfversion="1.0.0">
+<device image="user_hero230.png" type="DMXDevice" dmxcversion="3.2.3" ddfversion="1.0.0">
   <information>
-    <ddf-library-id>1045</ddf-library-id>
-    <model>Varytec HeroSpot 230</model>
+    <ddf-library-id>2059</ddf-library-id>
+    <model>Hero Spot 230</model>
     <vendor>Varytec</vendor>
     <author>Oliver Schuhmacher</author>
     <mode>18 Channel</mode>
   </information>
   <functions>
+    <!-- pan/tilt ch: 1-4 -->
     <position>
       <pan dmxchannel="0" finedmxchannel="1">
         <range range="540"/>
@@ -16,159 +17,109 @@
         <range range="220"/>
       </tilt>
     </position>
+	<!-- pan/tilt speed ch: 5 -->
+	<const dmxchannel="4" name="Pan Tilt Speed" val="0"/>
+	<!-- dimmer ch: 6 -->
+    <dimmer dmxchannel="5"/>
+	<!-- strobe ch: 7 -->
+    <strobe dmxchannel="6">
+      <range type="linear" mindmx="64" maxdmx="95" minval="1" maxval="10"/>
+      <range type="pulse" mindmx="128" maxdmx="143" minval="1" maxval="10"/>
+      <range type="random" mindmx="192" maxdmx="223" minval="1" maxval="10"/>
+    </strobe>
+	<!-- colorwheel ch: 8 -->
     <colorwheel dmxchannel="7">
-      <step type="color" val="" mindmx="0" maxdmx="4" caption="White"/>
-      <step type="color" val="" mindmx="14" maxdmx="22" caption="Red"/>
-      <step type="color" val="3000K" mindmx="32" maxdmx="40" caption="3000 K"/>
-      <step type="color" val="" mindmx="50" maxdmx="58" caption="Green"/>
-      <step type="color" val="" mindmx="68" maxdmx="76" caption="Dark Blue"/>
-	  <step type="color" val="" mindmx="86" maxdmx="94" caption="Yellow"/>
-	  <step type="color" val="" mindmx="104" maxdmx="112" caption="Light Blue"/>
-	  <step type="color" val="" mindmx="122" maxdmx="130" caption="Magenta"/>
+      <step type="color" val="#FFFFFF" mindmx="0" maxdmx="4" caption="White"/>
+      <step type="color" val="#FF0000" mindmx="14" maxdmx="22" caption="Red"/>
+      <step type="color" val="#FFF1DF" mindmx="32" maxdmx="40" caption="3000 K"/>
+      <step type="color" val="#008000" mindmx="50" maxdmx="58" caption="Green"/>
+      <step type="color" val="#00008B" mindmx="68" maxdmx="76" caption="Dark Blue"/>
+	  <step type="color" val="#FFFF00" mindmx="86" maxdmx="94" caption="Yellow"/>
+	  <step type="color" val="#ADD8E6" mindmx="104" maxdmx="112" caption="Light Blue"/>
+	  <step type="color" val="#FF00FF" mindmx="122" maxdmx="130" caption="Magenta"/>
       <wheelrotation>
         <step type="stop" mindmx="196" maxdmx="199"/>
         <range type="cw" mindmx="195" maxdmx="140" minval="0.00333" maxval="2.666666"/>
         <range type="ccw" mindmx="200" maxdmx="255" minval="0.00333" maxval="2.666666"/>
       </wheelrotation>
     </colorwheel>
-    <const dmxchannel="14" name="Macro Colors" val="0"/>
-    <const dmxchannel="15" name="Effect Speed" val="0"/>
-    <const dmxchannel="16" name="Color Speed" val="0"/>
-    <const dmxchannel="17" name="Optic Speed" val="0"/>
-    <gobowheel dmxchannel="22">
-      <goborotation dmxchannel="23" finedmxchannel="24">
-        <step type="stop" mindmx="0" maxdmx="0"/>
-        <step type="stop" mindmx="128" maxdmx="128"/>
-        <range type="cw" mindmx="127" maxdmx="1" minval="0.07333" maxval="4"/>
-        <range type="ccw" mindmx="129" maxdmx="255" minval="0.07333" maxval="4"/>
-      </goborotation>
-      <goboindex dmxchannel="23" finedmxchannel="24">
-        <range range="360" mindmx="0" maxdmx="255"/>
-      </goboindex>
-      <goboshake/>
-      <step type="open" mindmx="0" maxdmx="4" caption="Open"/>
-      <step type="gobo" mindmx="5" maxdmx="8" val="ICON-000736.png" caption=" New Raylines">
-        <range handler="goboshake" mindmx="5" maxdmx="8" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="60" maxdmx="71" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="32" maxdmx="32" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="130" maxdmx="141" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="9" maxdmx="13" val="ICON-000737.png" caption=" Pick Up Sticks 2">
-        <range handler="goboshake" mindmx="9" maxdmx="13" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="72" maxdmx="83" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="36" maxdmx="40" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="142" maxdmx="153" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="14" maxdmx="17" val="ICON-000738.png" caption="Snail Trails">
-        <range handler="goboshake" mindmx="17" maxdmx="17" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="84" maxdmx="95" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="41" maxdmx="44" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="154" maxdmx="165" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="18" maxdmx="22" val="ICON-000739.png" caption="Tiger Print">
-        <range handler="goboshake" mindmx="18" maxdmx="22" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="96" maxdmx="106" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="45" maxdmx="49" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="166" maxdmx="176" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="23" maxdmx="26" val="ICON-000740.png" caption=" Summer Branches">
-        <range handler="goboshake" mindmx="23" maxdmx="26" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="107" maxdmx="118" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="50" maxdmx="54" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="177" maxdmx="188" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="27" maxdmx="31" val="ICON-000741.png" caption=" Leaf Breakup">
-        <range handler="goboshake" mindmx="27" maxdmx="31" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="119" maxdmx="129" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="55" maxdmx="59" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="189" maxdmx="199" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="open" mindmx="200" maxdmx="201" caption="Open"/>
-      <wheelrotation>
-        <step type="stop" mindmx="222" maxdmx="223"/>
-        <range type="cw" mindmx="221" maxdmx="202" minval="0.00333" maxval="2.666666"/>
-        <range type="ccw" mindmx="224" maxdmx="243" minval="0.00333" maxval="2.666666"/>
+	<!-- gobowheel static ch: 9 -->
+	<gobowheel dmxchannel="8">
+	  <goboshake />
+	  <step type="open" mindmx="0" maxdmx="7" caption="Open" />
+      <step type="gobo" val="USER_VARYTEC_HERO230_1_1.png" mindmx="8" maxdmx="17" caption="Gobo 1"  >
+		<range handler="goboshake" mindmx="78" maxdmx="87" minval="1" maxval="10" />
+	  </step>
+      <step type="gobo" val="USER_VARYTEC_HERO230_1_2.png" mindmx="18" maxdmx="27" caption="Gobo 2" >
+	    <range handler="goboshake" mindmx="88" maxdmx="97" minval="1" maxval="10" />
+	  </step>
+      <step type="gobo" val="USER_VARYTEC_HERO230_1_3.png" mindmx="28" maxdmx="37" caption="Gobo 3" >
+	    <range handler="goboshake" mindmx="98" maxdmx="107" minval="1" maxval="10" />	  
+	  </step>
+	  <step type="gobo" val="USER_VARYTEC_HERO230_1_4.png" mindmx="38" maxdmx="47" caption="Gobo 4" >
+	    <range handler="goboshake" mindmx="108" maxdmx="117" minval="1" maxval="10" />	  
+	  </step>
+	  <step type="gobo" val="USER_VARYTEC_HERO230_1_5.png" mindmx="48" maxdmx="57" caption="Gobo 5" >
+	  	 <range handler="goboshake" mindmx="118" maxdmx="127" minval="1" maxval="10" />
+	  </step>
+	  <step type="gobo" val="USER_VARYTEC_HERO230_1_6.png" mindmx="58" maxdmx="67" caption="Gobo 6" >
+	  	 <range handler="goboshake" mindmx="128" maxdmx="137" minval="1" maxval="10" />
+	  </step>
+	  <step type="gobo" val="USER_VARYTEC_HERO230_1_7.png" mindmx="68" maxdmx="77" caption="Gobo 7" >
+	  	 <range handler="goboshake" mindmx="138" maxdmx="147" minval="1" maxval="10" />
+	  </step>
+	  <wheelrotation>
+        <range type="cw" mindmx="199" maxdmx="148" minval="0.1" maxval="8" />
+        <range type="ccw" mindmx="204" maxdmx="255" minval="0.1" maxval="8" />
       </wheelrotation>
-    </gobowheel>
-    <gobowheel dmxchannel="25">
-      <goborotation dmxchannel="26" finedmxchannel="27">
-        <step type="stop" mindmx="0" maxdmx="0"/>
-        <step type="stop" mindmx="128" maxdmx="128"/>
-        <range type="cw" mindmx="127" maxdmx="1" minval="0.07333" maxval="4"/>
-        <range type="ccw" mindmx="129" maxdmx="255" minval="0.07333" maxval="4"/>
+	</gobowheel>
+	<!-- gobowheel rotate ch: 10 | gobo rotation ch: 11-->
+	<gobowheel dmxchannel="9">
+	  <goboshake />
+	  <goborotation dmxchannel="10">
+        <step type="stop" mindmx="0" maxdmx="7" />
+        <range type="cw" mindmx="127" maxdmx="48" minval="0.5" maxval="5" />
+        <range type="ccw" mindmx="138" maxdmx="255" minval="0.5" maxval="5" />
       </goborotation>
-      <goboindex dmxchannel="26" finedmxchannel="27">
-        <range range="360" mindmx="0" maxdmx="255"/>
+	  <goboindex dmxchannel="10">
+        <range range="360" mindmx="8" maxdmx="47" minval="0" maxval="360" />
       </goboindex>
-      <goboshake/>
-      <step type="open" mindmx="0" maxdmx="4" caption="Open"/>
-      <step type="gobo" mindmx="5" maxdmx="8" val="ICON-000742.png" caption="Dot Breakup">
-        <range handler="goboshake" mindmx="5" maxdmx="8" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="60" maxdmx="71" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="32" maxdmx="32" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="130" maxdmx="141" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="9" maxdmx="13" val="ICON-000743.png" caption="Radial Dashes">
-        <range handler="goboshake" mindmx="9" maxdmx="13" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="72" maxdmx="83" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="36" maxdmx="40" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="142" maxdmx="153" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="14" maxdmx="17" val="ICON-000744.png" caption="Dots 8 (Two Column)">
-        <range handler="goboshake" mindmx="17" maxdmx="17" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="84" maxdmx="95" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="41" maxdmx="44" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="154" maxdmx="165" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="18" maxdmx="22" val="ICON-000745.png" caption="Rotating Dots">
-        <range handler="goboshake" mindmx="18" maxdmx="22" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="96" maxdmx="106" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="45" maxdmx="49" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="166" maxdmx="176" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="23" maxdmx="26" val="ICON-000746.png" caption="Leaves">
-        <range handler="goboshake" mindmx="23" maxdmx="26" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="107" maxdmx="118" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="50" maxdmx="54" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="177" maxdmx="188" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="gobo" mindmx="27" maxdmx="31" val="ICON-000747.png" caption="Organic">
-        <range handler="goboshake" mindmx="27" maxdmx="31" minval="0" maxval="0"/>
-        <range handler="goboshake" mindmx="119" maxdmx="129" minval="0.4" maxval="10"/>
-        <step for="goborotation">
-          <range handler="goboshake" mindmx="55" maxdmx="59" minval="0" maxval="0"/>
-          <range handler="goboshake" mindmx="189" maxdmx="199" minval="0.4" maxval="10"/>
-        </step>
-      </step>
-      <step type="open" mindmx="200" maxdmx="201" caption="Open"/>
-      <wheelrotation>
-        <step type="stop" mindmx="222" maxdmx="223"/>
-        <range type="cw" mindmx="221" maxdmx="202" minval="0.00333" maxval="2.666666"/>
-        <range type="ccw" mindmx="224" maxdmx="243" minval="0.00333" maxval="2.666666"/>
+	  <step type="open" mindmx="0" maxdmx="7" caption="Open" />
+      <step type="gobo" val="USER_VARYTEC_HERO230_2_1.png" mindmx="8" maxdmx="17" caption="Gobo 1"  >
+		<range handler="goboshake" mindmx="78" maxdmx="87" minval="1" maxval="10" />
+	  </step>
+      <step type="gobo" val="USER_VARYTEC_HERO230_2_2.png" mindmx="18" maxdmx="27" caption="Gobo 2" >
+	    <range handler="goboshake" mindmx="88" maxdmx="97" minval="1" maxval="10" />
+	  </step>
+      <step type="gobo" val="USER_VARYTEC_HERO230_2_3.png" mindmx="28" maxdmx="37" caption="Gobo 3" >
+	    <range handler="goboshake" mindmx="98" maxdmx="107" minval="1" maxval="10" />	  
+	  </step>
+	  <step type="gobo" val="USER_VARYTEC_HERO230_2_4.png" mindmx="38" maxdmx="47" caption="Gobo 4" >
+	    <range handler="goboshake" mindmx="108" maxdmx="117" minval="1" maxval="10" />	  
+	  </step>
+	  <step type="gobo" val="USER_VARYTEC_HERO230_2_5.png" mindmx="48" maxdmx="57" caption="Gobo 5" >
+	  	 <range handler="goboshake" mindmx="118" maxdmx="127" minval="1" maxval="10" />
+	  </step>
+	  <step type="gobo" val="USER_VARYTEC_HERO230_2_6.png" mindmx="58" maxdmx="67" caption="Gobo 6" >
+	  	 <range handler="goboshake" mindmx="128" maxdmx="137" minval="1" maxval="10" />
+	  </step>
+	  <step type="gobo" val="USER_VARYTEC_HERO230_2_7.png" mindmx="68" maxdmx="77" caption="Gobo 7" >
+	  	 <range handler="goboshake" mindmx="138" maxdmx="147" minval="1" maxval="10" />
+	  </step>
+	  <wheelrotation>
+        <range type="cw" mindmx="199" maxdmx="148" minval="0.1" maxval="8" />
+        <range type="ccw" mindmx="204" maxdmx="255" minval="0.1" maxval="8" />
       </wheelrotation>
-    </gobowheel>
+	</gobowheel>
+	<!-- focus ch: 12 -->
+	<focus dmxchannel="11">
+      <range type="linear" mindmx="255" maxdmx="0"/>
+    </focus>
+	<!-- zoom ch: 13 -->
+	<zoom dmxchannel="12">
+      <range type="linear" mindmx="255" maxdmx="0" minval="11" maxval="25"/>
+    </zoom>
+	<!-- prism ch: 14 | prism rotation ch: 15 -->
     <prism dmxchannel="13">
       <prismrotation dmxchannel="14">
         <step type="stop" mindmx="0" maxdmx="7"/>
@@ -183,19 +134,12 @@
         <step for="prismindex" mindmx="76" maxdmx="105"/>
       </step>
     </prism>
-    <!--Frost-->
-    <zoom dmxchannel="12">
-      <range type="linear" mindmx="255" maxdmx="0"/>
-    </zoom>
-    <focus dmxchannel="10">
-      <range type="linear" mindmx="255" maxdmx="0"/>
-    </focus>
-    <strobe dmxchannel="9">
-      <range type="linear" mindmx="64" maxdmx="95" minval="1" maxval="10"/>
-      <range type="pulse" mindmx="128" maxdmx="143" minval="1" maxval="10"/>
-      <range type="random" mindmx="192" maxdmx="223" minval="1" maxval="10"/>
-    </strobe>
-    <dimmer dmxchannel="5"/>
+	<!-- show mode ch: 16 -->
+	<const dmxchannel="15" name="Auto Show" val="0"/>
+	<!-- pan-tilt auto ch: 17 -->
+	<const dmxchannel="16" name="Auto PanTilt" val="0"/>
+	<!-- reset ch: 18 -->
+	<const dmxchannel="17" name="Reset" val="0"/>
   </functions>
   <procedures>
     <reset>
