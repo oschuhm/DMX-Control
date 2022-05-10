@@ -23,9 +23,12 @@
     <dimmer dmxchannel="5"/>
 	<!-- strobe ch: 7 -->
     <strobe dmxchannel="6">
-      <range type="linear" mindmx="64" maxdmx="95" minval="1" maxval="10"/>
-      <range type="pulse" mindmx="128" maxdmx="143" minval="1" maxval="10"/>
-      <range type="random" mindmx="192" maxdmx="223" minval="1" maxval="10"/>
+	  <step type="closed" mindmx="0" maxdmx="10" />
+	  <range type="ramp up" mindmx="11" maxdmx="80" minval="1" maxval="10"/>
+      <range type="ramp down" mindmx="81" maxdmx="140" minval="1" maxval="10"/>
+      <range type="pulse" mindmx="141" maxdmx="200" minval="1" maxval="10"/>
+	  <range type="linear" mindmx="201" maxdmx="250" minval="0.5" maxval="20"/>
+	  <step type="open" mindmx="251" maxdmx="255" />
     </strobe>
 	<!-- colorwheel ch: 8 -->
     <colorwheel dmxchannel="7">
