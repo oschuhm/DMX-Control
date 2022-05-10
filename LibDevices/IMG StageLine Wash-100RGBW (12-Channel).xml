@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="user_imgwash100.png" type="DMXDevice" dmxcversion="3.2.3" ddfversion="1.0.0">
+  <information>
+    <ddf-library-id>none</ddf-library-id>
+    <model>Wash-100 RGBW LED</model>
+    <vendor>IMG STAGELINE</vendor>
+    <author>Oliver Schuhmacher</author>
+    <mode>12 Channel</mode>
+  </information>
+  <functions>
+	<!-- dimmer ch: 1 -->
+    <dimmer dmxchannel="0"/>
+	<!-- color macro ch: 2 -->
+    <const dmxchannel="1" name="Color Macro" val="0"/>
+	<!-- RGBW color -->
+	<rgb>
+	  <red dmxchannel="2" />
+	  <green dmxchannel="3" />
+	  <blue dmxchannel="4" />
+	  <white dmxchannel="5" />
+	</rgb>
+	<!-- strobe ch: 7 -->
+    <strobe dmxchannel="6">
+	  <step type="open" mindmx="0" maxdmx="9" />
+      <range type="linear" mindmx="10" maxdmx="255" minval="1" maxval="10"/>
+    </strobe>
+	<!-- pan/tilt ch: 8-11 -->
+    <position>
+      <pan dmxchannel="7" finedmxchannel="8">
+        <range range="630"/>
+      </pan>
+      <tilt dmxchannel="9" finedmxchannel="10">
+        <range range="270"/>
+      </tilt>
+    </position>
+	<!-- music control ch: 12 -->
+    <rawranges dmxchannel="11" name="Music Control">
+	  <range type="No function" mindmx="0" maxdmx="127"/>
+	  <range type="Music Control" mindmx="128" maxdmx="255"/>
+	</rawranges>
+  </functions>
+</device>
