@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<device image="user_camQSpot.png" type="DMXDevice" dmxcversion="3.2.0" ddfversion="1.2.0" whitechanneldefaultmode="onlywhite">
+<device image="user_camQSpot.png" type="DMXDevice" dmxcversion="3.2.0" ddfversion="1.0.0" whitechanneldefaultmode = "onlywhite">
   <information>
-    <ddf-library-id>1502</ddf-library-id>
-    <model>Cameo Q-Spot 15 RGBW</model>
+    <ddf-library-id>none</ddf-library-id>
+    <model>Q-Spot 15 RGBW</model>
     <vendor>Cameo</vendor>
     <author>Oliver Schuhmacher</author>
     <mode>9 channel mode</mode>
     <comment></comment>
+	<electrical>
+      <static>3</static>
+      <dimmer>15</dimmer>
+    </electrical>
   </information>
   <functions>
 	<!-- dimmer + dimmer fine-->
