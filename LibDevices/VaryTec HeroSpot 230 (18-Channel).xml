@@ -124,27 +124,46 @@
     </focus>
 	<!-- zoom ch: 13 -->
 	<zoom dmxchannel="12">
-      <range type="linear" mindmx="255" maxdmx="0" minval="11" maxval="25"/>
+      <range type="linear" mindmx="0" maxdmx="255" minval="11" maxval="25"/>
     </zoom>
 	<!-- prism ch: 14 | prism rotation ch: 15 -->
     <prism dmxchannel="13">
       <prismrotation dmxchannel="14">
         <step type="stop" mindmx="0" maxdmx="7"/>
-        <range type="cw" mindmx="8" maxdmx="129" minval="0.0666" maxval="2.8"/>
+        <range type="cw" mindmx="129" maxdmx="108" minval="0.0666" maxval="2.8"/>
         <range type="ccw" mindmx="134" maxdmx="255" minval="0.0666" maxval="2.8"/>
       </prismrotation>
-      <step type="open" mindmx="0" maxdmx="19" caption="Excluded"/>
-      <step type="prism" caption="Linear">
-        <step for="prismrotation" mindmx="50" maxdmx="75"/>
+      <step type="open" mindmx="0" maxdmx="7" caption="No Prism"/>
+      <step type="prism" mindmx="8" maxdmx="99" caption="Radial Prism">
       </step>
-      <step type="prism" caption="Circular">
-        <step for="prismindex" mindmx="76" maxdmx="105"/>
+	  <step type="open" mindmx="100" maxdmx="130" caption="No Prism"/>
+      <step type="prism" mindmx="131" maxdmx="255" caption="Linear Prism">
       </step>
     </prism>
 	<!-- show mode ch: 16 -->
-	<const dmxchannel="15" name="Auto Show" val="0"/>
+	<rawstep dmxchannel="15" name="Auto Show">
+      <step caption="Off" mindmx="0" maxdmx="7" />
+      <step caption="Show1" mindmx="8" maxdmx="47" />
+	  <step caption="Show2" mindmx="48" maxdmx="87" />
+	  <step caption="Show3" mindmx="88" maxdmx="127" />
+	  <step caption="Show4" mindmx="128" maxdmx="167" />
+	  <step caption="Show5" mindmx="168" maxdmx="207" />
+	  <step caption="Show6" mindmx="208" maxdmx="247" />
+      <step caption="Music" mindmx="248" maxdmx="255" />
+    </rawstep>
 	<!-- pan-tilt auto ch: 17 -->
-	<const dmxchannel="16" name="Auto PanTilt" val="0"/>
+	<rawstep dmxchannel="16" name="Auto PanTilt">
+      <step caption="Off" mindmx="0" maxdmx="7" />
+      <step caption="Show1" mindmx="8" maxdmx="32" />
+	  <step caption="Show2" mindmx="33" maxdmx="58" />
+	  <step caption="Show3" mindmx="59" maxdmx="84" />
+	  <step caption="Show4" mindmx="85" maxdmx="110" />
+	  <step caption="Show5" mindmx="111" maxdmx="136" />
+	  <step caption="Show6" mindmx="137" maxdmx="162" />
+	  <step caption="Show7" mindmx="163" maxdmx="188" />
+	  <step caption="Show8" mindmx="189" maxdmx="214" />
+      <step caption="Music" mindmx="215" maxdmx="255" />
+    </rawstep>
 	<!-- reset ch: 18 -->
 	<const dmxchannel="17" name="Reset" val="0"/>
   </functions>
