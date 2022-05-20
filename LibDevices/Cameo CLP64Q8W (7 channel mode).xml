@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="user_camPar64.png" type="DMXDevice" dmxcversion="3.2.0" ddfversion="1.0.0" whitechanneldefaultmode = "onlywhite">
+  <information>
+    <ddf-library-id>none</ddf-library-id>
+    <model>PAR64 18x8W Quad LED</model>
+    <vendor>Cameo</vendor>
+    <author>Oliver Schuhmacher</author>
+    <mode>7 channel mode</mode>
+    <comment></comment>
+	<electrical>
+      <static>26</static>
+      <dimmer>144</dimmer>
+    </electrical>
+  </information>
+  <functions>
+	<!-- dimmer-->
+	<dimmer dmxchannel="0"/>
+	<!-- strobe functions -->
+	<strobe dmxchannel="1">
+      <range type="linear" mindmx="1" maxdmx="255" minval="1" maxval="20" />
+    </strobe>
+	<!-- RGBW color -->
+	<rgb>
+	  <red dmxchannel="2" />
+	  <green dmxchannel="3" />
+	  <blue dmxchannel="4" />
+	  <white dmxchannel="5" />
+	</rgb>
+	<!-- color macro / program-->
+	<const dmxchannel="6" name="Color Macro" val="0" />
+  </functions>
+</device>
