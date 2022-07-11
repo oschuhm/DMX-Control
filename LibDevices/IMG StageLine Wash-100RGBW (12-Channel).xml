@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<device image="user_imgwash100.png" type="DMXDevice" dmxcversion="3.2.3" ddfversion="1.0.0">
+<device image="user_imgwash100.png" type="DMXDevice" dmxcversion="3.2.3" ddfversion="1.0.0" whitechanneldefaultmode = "onlywhite">
   <information>
     <ddf-library-id>none</ddf-library-id>
     <model>Wash-100 RGBW LED</model>
     <vendor>IMG STAGELINE</vendor>
     <author>Oliver Schuhmacher</author>
     <mode>12 Channel</mode>
+	<comment></comment>
   </information>
   <functions>
 	<!-- dimmer ch: 1 -->
