@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="IMG-000214.png" type="DMXDevice" dmxcversion="3.0.0" ddfversion="1.0.0">
+  <information>
+    <ddf-library-id>683</ddf-library-id>
+    <model>Z-1200 II</model>
+    <vendor>Antari</vendor>
+    <author>Stefan Kistner</author>
+  </information>
+  <functions>
+    <fog dmxchannel="0"/>
+  </functions>
+</device>
