@@ -1,0 +1,36 @@
+#Device Number;Vendor;Model;Mode;'DMX Address;Power Source
+#1;Varytec;Hero Spot 230;18 Channel;'1.019;Neue Stromquelle
+#2;Varytec;Hero Spot 230;18 Channel;'1.037;Neue Stromquelle
+#7;Cameo;Q-Spot 15 RGBW;9 channel mode;'1.001;Neue Stromquelle
+#8;Cameo;Q-Spot 15 RGBW;9 channel mode;'1.010;Neue Stromquelle
+#3;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.091;Neue Stromquelle
+#4;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.098;Neue Stromquelle
+#5;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.105;Neue Stromquelle
+#6;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.112;Neue Stromquelle
+#11;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.119;
+#12;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.126;
+#13;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.133;
+#14;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.140;
+#15;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.147;
+#16;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.154;
+#17;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.161;
+#18;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.168;
+#19;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.175;
+#20;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.182;
+#21;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.189;
+#22;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.196;
+#23;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.203;
+#24;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.215;
+#25;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.227;
+#26;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.239;
+#27;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.251;
+#28;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.263;
+#29;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.275;
+#30;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.287;
+#9;Antari;Z-1200 II;;'1.512;
+#10;Smoke Factory;Tour-Hazer;;'1.510;
+
+
+Not used Power Sources
+Neue Stromquelle (2)
+Neue Stromquelle (3)
