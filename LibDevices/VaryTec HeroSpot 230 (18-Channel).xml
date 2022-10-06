@@ -130,7 +130,7 @@
     <prism dmxchannel="13">
       <prismrotation dmxchannel="14">
         <step type="stop" mindmx="0" maxdmx="7"/>
-        <range type="cw" mindmx="129" maxdmx="108" minval="0.0666" maxval="2.8"/>
+        <range type="cw" mindmx="8" maxdmx="129" minval="0.0666" maxval="2.8"/>
         <range type="ccw" mindmx="134" maxdmx="255" minval="0.0666" maxval="2.8"/>
       </prismrotation>
       <step type="open" mindmx="0" maxdmx="7" caption="No Prism"/>
