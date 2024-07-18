@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device image="IMG-000318.png" defaultdisplaystyle="image" type="DMXDevice" dmxcversion="3.1.0" ddfversion="1.0.0">
+  <information>
+    <ddf-library-id>1058</ddf-library-id>
+    <model>Tour-Hazer</model>
+    <vendor>Smoke Factory</vendor>
+    <author>Patrick Grote</author>
+	<electrical>
+      <static>1600</static>
+    </electrical>
+  </information>
+  <functions>
+    <fog dmxchannel="0"/>
+    <fan dmxchannel="1"/>
+  </functions>
+</device>

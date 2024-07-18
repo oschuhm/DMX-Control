@@ -1,0 +1,31 @@
+#Device Number;Vendor;Model;Mode;'DMX Address;Power Source
+#1;Varytec;Hero Spot 230;18 Channel;'1.019;Phase 1-1
+#2;Varytec;Hero Spot 230;18 Channel;'1.037;Phase 1-1
+#7;Cameo;Q-Spot 15 RGBW;9 channel mode;'1.001;Phase 3-1
+#8;Cameo;Q-Spot 15 RGBW;9 channel mode;'1.010;Phase 3-1
+#3;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.091;Phase 2-1
+#4;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.098;Phase 2-1
+#5;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.105;Phase 2-1
+#6;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.112;Phase 2-1
+#11;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.119;Phase 2-1
+#12;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.126;Phase 2-1
+#13;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.133;Phase 2-1
+#14;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.140;Phase 2-1
+#15;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.147;Phase 1-1
+#16;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.154;Phase 1-1
+#17;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.161;Phase 1-1
+#18;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.168;Phase 1-1
+#19;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.175;
+#20;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.182;
+#21;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.189;
+#22;Cameo;PAR64 18x8W Quad LED;7 channel mode;'1.196;
+#23;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.203;Phase 1-1
+#24;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.215;Phase 1-1
+#25;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.227;Phase 1-1
+#26;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.239;Phase 1-1
+#27;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.251;Phase 2-1
+#28;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.263;Phase 2-1
+#29;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.275;Phase 2-1
+#30;IMG STAGELINE;Wash-100 RGBW LED;12 Channel;'1.287;Phase 2-1
+#9;Antari;Z-1200 II;;'1.509;Phase 3-1
+#10;Smoke Factory;Tour-Hazer;;'1.510;Phase 3-1
