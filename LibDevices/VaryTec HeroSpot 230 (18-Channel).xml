@@ -94,24 +94,31 @@
 	  <step type="open" mindmx="0" maxdmx="7" caption="Open" />
       <step type="gobo" val="USER_VARYTEC_HERO230_2_1.png" mindmx="8" maxdmx="17" caption="Gobo 1"  >
 		<range handler="goboshake" mindmx="78" maxdmx="87" minval="1" maxval="10" />
+		<step for="goborotation" mindmx="8" maxdmx="17"/>
 	  </step>
       <step type="gobo" val="USER_VARYTEC_HERO230_2_2.png" mindmx="18" maxdmx="27" caption="Gobo 2" >
 	    <range handler="goboshake" mindmx="88" maxdmx="97" minval="1" maxval="10" />
+		<step for="goborotation" mindmx="18" maxdmx="27"/>
 	  </step>
       <step type="gobo" val="USER_VARYTEC_HERO230_2_3.png" mindmx="28" maxdmx="37" caption="Gobo 3" >
-	    <range handler="goboshake" mindmx="98" maxdmx="107" minval="1" maxval="10" />	  
+	    <range handler="goboshake" mindmx="98" maxdmx="107" minval="1" maxval="10" />
+        <step for="goborotation" mindmx="28" maxdmx="37"/>		
 	  </step>
 	  <step type="gobo" val="USER_VARYTEC_HERO230_2_4.png" mindmx="38" maxdmx="47" caption="Gobo 4" >
-	    <range handler="goboshake" mindmx="108" maxdmx="117" minval="1" maxval="10" />	  
+	    <range handler="goboshake" mindmx="108" maxdmx="117" minval="1" maxval="10" />
+        <step for="goborotation" mindmx="38" maxdmx="47"/>				
 	  </step>
 	  <step type="gobo" val="USER_VARYTEC_HERO230_2_5.png" mindmx="48" maxdmx="57" caption="Gobo 5" >
 	  	 <range handler="goboshake" mindmx="118" maxdmx="127" minval="1" maxval="10" />
+		 <step for="goborotation" mindmx="48" maxdmx="57"/>		
 	  </step>
 	  <step type="gobo" val="USER_VARYTEC_HERO230_2_6.png" mindmx="58" maxdmx="67" caption="Gobo 6" >
 	  	 <range handler="goboshake" mindmx="128" maxdmx="137" minval="1" maxval="10" />
+		 <step for="goborotation" mindmx="58" maxdmx="67"/>		
 	  </step>
 	  <step type="gobo" val="USER_VARYTEC_HERO230_2_7.png" mindmx="68" maxdmx="77" caption="Gobo 7" >
 	  	 <range handler="goboshake" mindmx="138" maxdmx="147" minval="1" maxval="10" />
+		 <step for="goborotation" mindmx="68" maxdmx="77"/>		
 	  </step>
 	  <wheelrotation>
         <range type="cw" mindmx="199" maxdmx="148" minval="0.1" maxval="8" />
@@ -130,7 +137,7 @@
     <prism dmxchannel="13">
       <prismrotation dmxchannel="14">
         <step type="stop" mindmx="0" maxdmx="7"/>
-        <range type="cw" mindmx="8" maxdmx="129" minval="0.0666" maxval="2.8"/>
+        <range type="cw" mindmx="129" maxdmx="8" minval="0.0666" maxval="2.8"/>
         <range type="ccw" mindmx="134" maxdmx="255" minval="0.0666" maxval="2.8"/>
       </prismrotation>
       <step type="open" mindmx="0" maxdmx="7" caption="No Prism"/>
